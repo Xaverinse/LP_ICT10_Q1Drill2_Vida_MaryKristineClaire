@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill #2</title>
+    <style>
+        body {background-color: lightyellow; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        kbd {font-size: 20px; color: lightcoral; background-color: pink;}
+        h1 {color: #FA8FB6; font-weight: bolder;}
+        u, i, details {color: #FF9CC0;}
+        .class-form {width: 600px}
+        button {background-color: #E0F7FF; color: #038ca8;}
+        h2 {color: #038ca8;}
+    </style>
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+    <h1>String Showcase</h1>
+
+    <h2>Name</h2>
+    <input type="text" id="name">
+
+    <h2>Age</h2>
+    <input type="number" id="age">
+
+    <h2>School</h2>
+    <input type="text" id="school">
+
+    <br><br>
+    <button py-click="click">Generate Message</button>
+
+    <br>
+
+    <div id="output" style="margin-top: 20px; white-space: pre-wrap; background: #f9b3cd; padding: 15px;
+border-radius: 5px; color: #126c7e;"></div>
+
+    <py-config> 
+    [[fetch]]
+    files = ["main.py"]
+    </py-config>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
