@@ -20,8 +20,9 @@ def click(event):
    Hello {name}!
    You're currently {age} years old.
    You study at {school}.
-   This website was made with HTML and Python Script.
+   This website was made with HTML and Python.
     """
 
     output_div.innerText = message
+
 
